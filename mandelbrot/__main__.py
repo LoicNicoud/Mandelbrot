@@ -2,7 +2,7 @@ from .mandelbrot import Mandelbrot
 import click
 
 
-@click.command()
+@click.command(help='Compute and colorize the mandelbrot set around a certain point')
 @click.option('-w', '--width',
               default=1500, type=int, show_default=True,
               help='Width of the output image')
